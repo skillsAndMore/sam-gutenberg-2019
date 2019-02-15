@@ -180,11 +180,6 @@ function sam_courses_list() {
 				<p>Ecco le Skilled Answers, il nostro appuntamento quotidiano dove rispondiamo in formato video alle domande pi&ugrave; interessanti che troviamo su Quora.</p>
 				<a title="Skilled Answers, risposte quotidiane ai tuoi dubbi digitali" href="https://www.youtube.com/playlist?list=PLs6wiV5pkOnCp2FSqHM6gvEKFjP2oBRqY" target="_blank" rel="noopener nofollow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube-skilled-answers.jpg" alt="Skilled Answers, risposte quotidiane ai tuoi dubbi digitali"></a>
 			</div>
-			<div class="f-1-2">
-				<h3>Resta aggiornato con il podcast</h3>
-				<p>Se vuoi portarci con te mentre fai la spesa, jogging o anche quando lavori questo &egrave; lo strumento migliore per farlo e per conoscere in anteprima le novit&aacute; di questo mondo!</p>
-				<a title="FooBar il podcast di SkillsAndMore" href="https://www.spreaker.com/show/foo-bar" target="_blank" rel="noopener nofollow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/spreaker-foobar.jpg" alt="Podcast Foobar su Spreaker"></a>
-			</div>
 		</div>
 	</div>
 
