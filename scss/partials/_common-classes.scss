@@ -1,0 +1,881 @@
+/* Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* Avatar
+--------------------------------------------- */
+
+.alignleft .avatar,
+.author-box .avatar {
+	margin-right: 24px;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+}
+
+.author-box .avatar {
+	height: 80px;
+	width: 80px;
+}
+
+.comment .avatar {
+	vertical-align: middle;
+	height: 50px;
+	margin: 0 16px 0 0;
+	width: 50px;
+}
+
+/* Genesis
+--------------------------------------------- */
+.wrap {
+	margin: 0 5%;
+}
+.breadcrumb {
+	margin-bottom: 30px;
+}
+
+.archive-description,
+.author-box {
+	border-bottom: 3px solid $dark-gray;
+	text-align: center;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.single .author-box {
+	background-color: $white;
+	border-bottom: none;
+	display: flex;
+	justify-content: start;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 30px;
+	text-align: left;
+
+	.author-box-avatar {
+		flex: 1 1 20%;
+		text-align: center;
+		padding-right: 10px;
+
+		img {
+			margin-bottom: 0;
+			margin-right: 0;
+			height: auto;
+			width: auto;
+		}
+	}
+
+	.author-box-content {
+		flex: 1 1 80%;
+		font-size: 14px;
+	}
+
+	h4.author-box-title {
+		font-size: 18px;
+		margin: 0 0 10px;
+	}
+
+	.fa {
+		padding: 0 3px;
+	}
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+	overflow: hidden;
+}
+
+.site-header .search-form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 50%;
+}
+
+.search-form input {
+	-webkit-appearance: none;
+	&[type="submit"] {
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+}
+
+/* Titles
+--------------------------------------------- */
+
+.archive-title {
+	font-size: 20px;
+}
+
+.entry-title {
+	font-size: 30px;
+	a {
+		color: $color-body;
+	}
+}
+
+.sidebar .widget-title a {
+	color: $color-body;
+}
+
+.entry-title a:hover {
+	color: $color-link;
+}
+
+.widget-title {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.footer-widgets .widget-title {
+	color: $color-light-link;
+}
+
+/* WordPress
+--------------------------------------------- */
+
+a {
+	&.aligncenter img {
+		display: block;
+		margin: 0 auto;
+	}
+	&.alignnone {
+		display: inline-block;
+	}
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+a {
+	&.alignleft,
+	&.alignnone,
+	&.alignright {
+		max-width: 100%;
+	}
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 12px;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 24px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 24px 24px;
+}
+
+.wp-caption-text {
+	font-size: 14px;
+	font-weight: $heading-font-weight;
+	text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+	margin-bottom: 0;
+}
+
+/* SkillsAndMore
+--------------------------------------------- */
+.btn {
+	border-radius: 6px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: $white;
+	transition: all 0.6s;
+
+	&.normal {
+		background-color: rgba(255, 255, 255, 0.3);
+		box-shadow: none;
+	}
+
+	&.cta {
+		background-color: $orange;
+	}
+
+	&.gray {
+		background-color: $dark-gray;
+		box-shadow: none;
+	}
+
+	&.ghost {
+		border: 1px solid $dark-gray;
+		color: $dark-gray;
+	}
+
+	&:hover {
+		background-color: $orange;
+		border: none;
+		color: $white;
+		text-decoration: none !important;
+
+		box-shadow: 0px 26px 15px -20px rgba(0, 0, 0, 0.4);
+		transform: translateY(-6px);
+	}
+}
+
+/* Sistemo titolo testata pagine non home
+--------------------------------------------- */
+body:not(.home) .header-intro {
+	background-color: $green;
+	.wrap {
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	h1 {
+		color: $white;
+		margin-bottom: 0;
+	}
+}
+
+/* Pricing Table
+--------------------------------------------- */
+.single-llms_membership.postid-19333 {
+	.llms-access-plan {
+		float: none;
+		margin: 10px auto 0;
+	}
+}
+.single-llms_membership,
+.single-course,
+.single-lesson {
+	.llms-access-plan {
+		margin-bottom: 0;
+		// max-width: 500px;
+
+		h4 {
+			background-color: $dark-gray;
+			font-size: 24px;
+			padding: 16px;
+		}
+		.llms-access-plan-content,
+		.llms-access-plan-footer {
+			background-color: $white;
+		}
+		.llms-access-plan-footer {
+			padding: 20px 0 30px;
+		}
+		.llms-access-plan-description {
+			font-size: 14px;
+			padding: 0 25px;
+		}
+		.llms-access-plan-pricing {
+			padding: 10px;
+		}
+		&.featured {
+			.llms-access-plan-content,
+			.llms-access-plan-footer {
+				border-left: none;
+				border-right: none;
+				border-bottom: none;
+			}
+			h4 {
+				background-color: $orange;
+			}
+			.gray {
+				background-color: $orange;
+
+				&:hover {
+					box-shadow: 0px 26px 15px -20px rgba(0, 0, 0, 0.4);
+				}
+			}
+			.stamp {
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+/* Icone livello difficoltà corso
+--------------------------------------------- */
+.llms-meta {
+	font-size: 18px;
+	div.difficulty {
+		display: inline-block;
+	}
+	div.difficulty::before {
+		background-size: contain;
+		content: "";
+		float: left;
+		height: 24px;
+		margin-right: 6px;
+		width: 24px;
+	}
+
+	.junior::before {
+		background: url("images/junior-diff-small.png") no-repeat;
+	}
+
+	.middle::before {
+		background: url("images/middle-diff-small.png") no-repeat;
+	}
+
+	.senior::before {
+		background: url("images/senior-diff-small.png") no-repeat;
+	}
+}
+
+/*
+Sistemo il colore di sfondo per l'archivio articoli
+--------------------------------------------- */
+.archive-posts {
+	.site-inner {
+		background-color: $white;
+		margin: 30px auto;
+		width: 80%;
+
+		h2,
+		p {
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+
+	.single-post {
+		margin: 10px 20px;
+	}
+}
+
+.f-1-4 img {
+	display: block;
+	margin: 10px auto;
+}
+
+/* Sezione archivio articoli in pagine secondarie
+--------------------------------------------- */
+.articles {
+	background-color: $white;
+	padding: 20px 0;
+
+	.intro {
+		h2,
+		p {
+			text-align: center;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+	}
+	.f-1-2 {
+		margin: 10px 1% 30px;
+		overflow: hidden;
+		position: relative;
+		background: #42b078;
+
+		img {
+			display: block;
+		}
+
+		.overlay {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+/* sistemo l'altezza del logo
+--------------------------------------------- */
+.custom-logo-link {
+	height: 65px;
+	display: block;
+}
+
+/* Bacheca utente
+--------------------------------------------- */
+.page-id-7 {
+}
+
+/* Personalizzo il login
+--------------------------------------------- */
+.page-id-143 .llms-person-login-form-wrapper {
+	background-color: $white;
+	margin: 30px auto;
+	padding: 20px;
+	width: 50%;
+
+	.llms-form-heading {
+		display: none;
+	}
+}
+
+/* Personalizzo Highlight.js
+--------------------------------------------- */
+pre::before {
+	background-color: $green;
+	content: "CODE";
+	color: $white;
+	display: block;
+	font-family: $base-font-family;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+}
+
+[data-language="apache"]::before {
+	content: "Apache";
+}
+
+[data-language="bash"]::before {
+	content: "Bash";
+}
+
+[data-language="css"]::before {
+	content: "CSS";
+}
+
+[data-language="html"]::before {
+	content: "HTML";
+}
+
+[data-language="javascript"]::before {
+	content: "JavaScript";
+}
+
+[data-language="jquery"]::before {
+	content: "jQuery";
+}
+
+[data-language="php"]::before {
+	content: "PHP";
+}
+
+[data-language="ruby"]::before {
+	content: "Ruby";
+}
+
+[data-language="scss"]::before {
+	content: "SCSS";
+}
+
+[data-language="svg"]::before {
+	content: "SVG";
+}
+
+[data-language="xml"]::before {
+	content: "XML";
+}
+
+[data-language="yaml"]::before {
+	content: "YAML";
+}
+
+/* Personalizzo Progress Bar
+--------------------------------------------- */
+div.llms-progress {
+	.llms-progress-bar {
+		background-color: $dark-gray !important;
+	}
+	.progress-bar-complete {
+		background-color: $orange;
+	}
+}
+
+/* Sezione delle testimonianze
+--------------------------------------------- */
+.testimonials {
+	background-color: $green;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+
+	h2 {
+		font-size: 20px;
+	}
+	h4 {
+		color: $white;
+		font-family: $base-font-family;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	.slick-dots {
+		margin: 0 auto;
+		li {
+			width: 5px;
+			height: 5px;
+			display: inline-block;
+			margin: 0 10px;
+			button {
+				background-color: rgba($white, 0.6);
+				font-size: 0;
+				line-height: 0;
+				width: 5px;
+				height: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				padding: 0;
+				border-radius: 50%;
+				outline: none;
+			}
+			&.slick-active {
+				button {
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+
+.testimonial {
+	padding: 0 30px;
+	outline: 0;
+	width: 100%;
+
+	h2,
+	p {
+		color: $white;
+	}
+	span.avatar {
+		display: none;
+	}
+}
+
+/* Sistemi tabella prezzi
+--------------------------------------------- */
+.prices {
+	background-color: $green;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 50px;
+
+	.wrap {
+		max-width: 1000px;
+		margin: 80px auto 100px;
+	}
+
+	.tab-price {
+		background-color: rgba($white, 0.6);
+		border-radius: 6px;
+		padding: 40px 0;
+
+		h3 {
+			padding: 10px 0;
+			letter-spacing: 0.6px;
+			margin-bottom: 0;
+			max-width: 100%;
+		}
+
+		.price {
+			font-size: 17px;
+		}
+
+		&.featured {
+			background-color: $white;
+			border: 3px solid $orange;
+			transform: scale(1.13);
+
+			h3 {
+				background-color: $orange;
+				color: $white;
+				font-size: 28px;
+				margin-bottom: 12px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		&.lifetime {
+			h3 {
+				background-color: $dark-gray;
+				color: $white;
+			}
+
+			.price {
+				font-size: 26px;
+				margin: 35px auto;
+			}
+
+			.desc {
+				font-size: 14px;
+				line-height: 1.2;
+				margin: 50px 45px;
+
+				strong {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	h2 {
+		color: $white;
+	}
+	h4 {
+		color: $white;
+		font-family: $base-font-family;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	p,
+	small {
+		margin: 0;
+		line-height: 0.7;
+	}
+
+	a {
+		font-size: 85%;
+	}
+
+	.btn {
+		&:hover {
+			background-color: $orange;
+			color: $white;
+			text-decoration: none;
+		}
+	}
+
+	.price {
+		color: $orange;
+	}
+
+	ul {
+		margin: 30px auto;
+		.barrato {
+			color: $mid-gray;
+			font-weight: normal;
+			text-decoration: line-through;
+		}
+
+		li {
+			line-height: 1.3;
+			font-size: 13px;
+			font-weight: bold;
+			margin-bottom: 4px;
+		}
+	}
+
+	.gateway,
+	.faq {
+		color: $white;
+	}
+
+	.gateway {
+		margin-bottom: 20px;
+	}
+}
+
+/* Sistemi di pagamento accettati
+--------------------------------------------- */
+
+.credit-cards {
+	background-color: $white;
+	font-family: "PaymentFont";
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+.credit-cards i {
+	margin-right: 6px;
+	background-color: transparent;
+	padding: 4px;
+	border-radius: 4px;
+	color: #333;
+	font-style: normal;
+	display: inline-block;
+}
+
+/* Menu Footer
+--------------------------------------------- */
+.site-footer .social-pages a:hover {
+	text-decoration: none;
+}
+
+/* FAQ Accordion
+--------------------------------------------- */
+.page-template-template-faq .accordion {
+	list-style: none;
+	perspective: 900;
+	padding: 0;
+	margin: 0 0 30px;
+
+	.transition,
+	.faq-content,
+	li i:before,
+	li i:after {
+		transition: all 0.25s ease-in-out;
+	}
+
+	.flipIn,
+	h3,
+	li {
+		animation: flipdown 0.5s ease both;
+	}
+	h3 {
+		margin-bottom: 15px;
+	}
+	h3,
+	.faq-content {
+		padding-left: 20px;
+	}
+	.faq-content {
+		font-size: 16px;
+		line-height: 1.3;
+		position: relative;
+		overflow: hidden;
+		max-height: 800px;
+		opacity: 1;
+		transform: translate(0, 0);
+		z-index: 2;
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		ol,
+		ul {
+			margin-bottom: 10px;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	> li {
+		position: relative;
+		padding: 18px 30px 4px;
+		margin: 0;
+		background-color: $white;
+		border-top: 1px solid $light-gray;
+		list-style: none;
+	}
+	li:nth-of-type(1) {
+		animation-delay: 0.5s;
+	}
+	li:nth-of-type(2) {
+		animation-delay: 0.75s;
+	}
+	li:nth-of-type(3) {
+		animation-delay: 1s;
+	}
+	li:last-of-type {
+		padding-bottom: 0;
+	}
+
+	li i {
+		position: absolute;
+		left: 0;
+		transform: translate(6px, 0);
+		margin-top: 12px;
+	}
+	li i:before,
+	li i:after {
+		content: "";
+		position: absolute;
+		background-color: $green;
+		width: 3px;
+		height: 9px;
+	}
+	li i:before {
+		transform: translate(15px, 0) rotate(45deg);
+	}
+	li i:after {
+		transform: translate(20px, 0) rotate(-45deg);
+	}
+	li input[type="checkbox"] {
+		position: absolute;
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0;
+	}
+	li input[type="checkbox"]:checked ~ .faq-content {
+		margin-top: 0;
+		max-height: 0;
+		opacity: 0;
+		transform: translate(0, 50%);
+	}
+	li input[type="checkbox"]:checked ~ i:before {
+		transform: translate(20px, 0) rotate(45deg);
+	}
+	li input[type="checkbox"]:checked ~ i:after {
+		transform: translate(15px, 0) rotate(-45deg);
+	}
+
+	@keyframes flipdown {
+		0% {
+			opacity: 0;
+			transform-origin: top center;
+			transform: rotateX(-90deg);
+		}
+		5% {
+			opacity: 1;
+		}
+		80% {
+			transform: rotateX(8deg);
+		}
+		83% {
+			transform: rotateX(6deg);
+		}
+		92% {
+			transform: rotateX(-3deg);
+		}
+		100% {
+			transform-origin: top center;
+			transform: rotateX(0deg);
+		}
+	}
+}
+
+/* Effetto hover corsi
+--------------------------------------------- */
+.courses {
+	.f-1-4:hover {
+		background: linear-gradient(139deg, #1abc9c, #ef6c00);
+		background-size: 400% 400%;
+
+		-webkit-animation: hoverCorso 3s ease infinite;
+		-moz-animation: hoverCorso 3s ease infinite;
+		animation: hoverCorso 3s ease infinite;
+	}
+}
+
+/* Sistemo aside responsive
+--------------------------------------------- */
+aside {
+	margin-left: 20px;
+	margin-right: 20px;
+}

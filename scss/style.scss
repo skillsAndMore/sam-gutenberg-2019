@@ -1,0 +1,137 @@
+/*!
+Theme Name: SkillsAndMore Gutenberg 2019
+Theme URI: https://skillsandmore.org
+Description: Il tema per il nuovo business model di skillsAndMore.
+Author: Andrea Barghigiani
+Author URI: http://andreabarghigiani.info
+Template: genesis
+Template Version: 0.1.0
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* # Table of Contents
+- HTML5 Reset
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+- Defaults
+	- Typographical Elements
+	- Headings
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+- Structure and Layout
+	- Site Containers
+	- Column Widths and Positions
+	- Column Classes
+- Common Classes
+	- Avatar
+	- Genesis
+	- Search Form
+	- Titles
+	- WordPress
+- Widgets
+	- Featured Content
+- Plugins
+	- Genesis eNews Extended
+	- Jetpack
+- Site Header
+	- Title Area
+	- Widget Area
+- Site Navigation
+	- Header Navigation
+	- Primary Navigation
+	- Secondary Navigation
+- Content Area
+	- Entries
+	- Entry Meta
+	- Pagination
+	- Comments
+- Sidebars
+- Footer Widgets
+- Site Footer
+- Media Queries
+	- Retina Display
+	- Max-width: 1200px
+	- Max-width: 960px
+	- Max-width: 800px
+*/
+
+@import "partials/_variables.scss";
+@import "partials/_colors.scss";
+@import "partials/_mixins.scss";
+
+@import "partials/_reset.scss";
+@import "partials/_defaults.scss";
+
+@import "partials/_structure-layout.scss";
+@import "partials/_common-classes.scss";
+@import "partials/_widgets.scss";
+@import "partials/_plugins.scss";
+@import "partials/_accessibility.scss";
+@import "partials/_site-header.scss";
+@import "partials/_site-navigation.scss";
+@import "partials/_content-area.scss";
+@import "partials/gutenberg";
+@import "partials/_sidebars.scss";
+@import "partials/_footer-widgets.scss";
+@import "partials/_site-footer.scss";
+
+//* Homepage
+.home {
+	@import "partials/_front-page.scss";
+}
+
+//* Singolo Articolo
+.single-post {
+	@import "partials/_single-post.scss";
+}
+//* Singolo Corso
+.single-course {
+	@import "partials/_single-course.scss";
+}
+
+//* Singola Lezione
+.single-lesson {
+	@import "partials/_single-lesson.scss";
+}
+
+//* Archivio Corsi
+.post-type-archive-course,
+.tax-course_track {
+	@import "partials/_archive-course.scss";
+}
+
+//* Pagina Membership
+.single-llms_membership {
+	@import "partials/_single-llms_membership.scss";
+}
+
+//* Landing Page SAM
+.landing-page-sam {
+	@import "partials/landing-sam";
+}
+//* Pagamento
+.page-id-6 {
+	@import "partials/_pagamento.scss";
+}
+
+//* Pagina 404
+.error404 {
+	@import "partials/_error404.scss";
+}
+
+//* Blog
+.blog {
+	@import "partials/_blog.scss";
+}
+
+//* Risultati di ricerca
+.search {
+	@import "partials/_search.scss";
+}
+
+@import "partials/_media-queries.scss";

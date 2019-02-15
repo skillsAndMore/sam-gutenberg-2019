@@ -1,0 +1,234 @@
+.value-prop, .levels{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.levels{
+  background-color: $light-gray;
+}
+.site-header {
+  .btn.normal {
+    display: none;
+  }
+}
+
+main.content{
+  display: none;
+}
+
+.value-prop .value-center-text{
+  line-height: 1.4;
+  margin:0 auto 50px;
+  width: 55vw;
+}
+.value, .level{
+  text-align: center;
+  padding: 0 15px;
+  margin-top: 30px;
+
+  svg{
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 120px;
+  }
+
+  h3{
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+.level{
+  svg{
+    max-width: 150px;
+  }
+}
+
+
+.courses{
+  background-color: $light-gray;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .f-1-4{
+    margin: 0 1%;
+
+    img{
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .llms-meta{
+	background-color: $white;
+    color: $dark-gray;
+	padding: 10px 20px;
+  }
+
+  h3{
+    font-size: 22px;
+    &:hover{
+      color: $orange;
+    }
+  }
+
+  .btn{
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+/**
+ * Sezione per la lista degli articoli
+ */
+.articles{
+  background-color: $white;
+  padding: 20px 0;
+
+  .intro {
+    h2, p {
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .f-1-2{
+	margin: 10px 1% 30px;
+  }
+
+  img{ display: block; }
+
+  .all-art{
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+/**
+ * Sezione contenuti multimediali
+ */
+.media{
+  background-color: $light-gray;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .intro {
+    h2, p {
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .f-1-2{
+    margin: 10px 1% 30px;
+    text-align: center;
+  }
+
+}
+
+/**
+ * Sistemo i titoli
+ */
+h1, h2, h3, h4{
+  max-width: 85%;
+  margin: 0 auto 15px;
+}
+
+@media only screen and (min-width: 800px) {
+  .articles {
+    .intro {
+      h2, p {
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    }
+  }
+
+  .courses{
+    .btn{
+      display: block;
+      margin: 70px auto 0;
+    }
+  }
+
+  .site-header{
+    background: rgb(27, 170, 142) url( 'images/bg-front-header.jpg' ) center 60% no-repeat;
+    height: 100vh;
+    .header-intro{
+      h2{
+        padding-top: 12vh;
+        font-size: calc(1.5rem + 2.5vmin);
+      }
+
+      p{
+        font-size: calc(0.4rem + 2vmin);
+        line-height: 1.4;
+        padding-top: 2vh;
+      }
+    }
+
+    .btn.normal{
+      display: inline-block;
+    }
+  }
+}
+
+/**
+ * Animazioni SVG
+ */
+
+//Maialino
+#maialino{
+  
+  .corpo{ fill: $dark-gray; }
+  
+  .moneta1{
+    fill: none;
+    stroke: $orange;
+    stroke-width: 17;
+    animation: 1s monetafall;
+  }
+  
+  .moneta2{
+    fill: none;
+    stroke: $orange;
+    stroke-width: 17;
+    animation:  1s moneta2fall;
+  }
+
+}
+
+@keyframes monetafall {
+	0% {
+		opacity: 0;
+		transform: translate(0px, -100px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes moneta2fall {
+	0% {
+		transform: translate(0px, -50px);
+		opacity: 0;
+	}
+	26.67% {
+		transform: translate(0px, -50px);
+		opacity: 0;
+	}
+	80% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}

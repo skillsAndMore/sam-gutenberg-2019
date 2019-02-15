@@ -1,0 +1,76 @@
+.entry{
+  margin-top: 30px;
+
+  .llms-checkout{
+    background-color: transparent;
+  }
+}
+
+.llms-notice, .llms-checkout-section, .llms-checkout-wrapper form.llms-login{
+  border-color: $green;
+  background-color: $white;
+
+  &.llms-checkout-errors, &.llms-error, .llms-payment-gateways {
+    li { list-style: none; }
+  }
+
+}
+
+.llms-checkout-section{
+  .type-email, .type-password{
+    width: 100%;
+  }
+
+  input{
+    color: #888888;
+    font-size: 80%;
+  }
+
+  .type-html{
+    line-height: 1;
+
+    .llms-description{
+      font-size: 12px;
+    }
+  }
+
+  .hidden-coupon{
+    background-image: url(images/coupon-icon.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 35px;
+    width: 35px;
+    float: right;
+    margin-top: -6px;
+
+    span{
+      visibility: hidden;
+    }
+  }
+
+  .llms-coupon-wrapper{
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.llms-notice{
+  background-color: transparentize($green, .7);
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.llms-checkout-section, form.llms-login{
+  .llms-form-heading{
+    background-color: $green;
+  }
+}
+
+.llms-order-summary{
+  h5{
+    margin-bottom: 10px;
+  }
+}
+
+#llms_remember{ vertical-align: middle;}

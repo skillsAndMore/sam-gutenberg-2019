@@ -1,0 +1,192 @@
+&:not(.logged-in) {
+	.llms-widget-syllabus .lesson-title {
+		color: $mid-gray;
+
+		a {
+			color: $orange;
+		}
+	}
+}
+
+.header-intro {
+	h4 {
+		font-family: "Open Sans", sans-serif;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	a {
+		color: $white;
+	}
+}
+
+.content {
+	margin-top: 30px;
+}
+
+.entry-content {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.llms-lesson-preview .llms-lesson-link {
+	background-color: transparent;
+	box-shadow: none;
+
+	&:hover {
+		background-color: transparent;
+		h4 {
+			color: $orange;
+		}
+	}
+}
+
+.llms-course-outline {
+	.section-title {
+		display: block;
+		font-family: $tit;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+}
+
+.llms-widget-syllabus {
+	.llms-lesson-complete.done {
+		color: $orange;
+	}
+
+	.lesson-title {
+		a {
+			color: #ccc;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+		&.done a {
+			color: $orange;
+		}
+	}
+}
+
+.llms-course-navigation {
+	.llms-course-nav {
+		position: relative;
+
+		.llms-pre-text {
+			margin-top: 30px;
+			padding-right: 40px;
+
+			&:first-child {
+				padding-left: 20px;
+			}
+		}
+
+		.llms-lesson-title {
+			display: none;
+		}
+
+		&:first-child {
+			.llms-lesson-title,
+			.llms-pre-text {
+				padding-left: 20px;
+				padding-right: 0;
+				text-align: right;
+			}
+			&::before {
+				font-family: Dashicons;
+				content: "\f341";
+				position: absolute;
+				top: 40px;
+				font-size: 40px;
+			}
+
+			&::after {
+				visibility: hidden;
+			}
+		}
+
+		&::after {
+			font-family: Dashicons;
+			content: "\f345";
+			position: absolute;
+			top: 40px;
+			right: 20px;
+			font-size: 40px;
+		}
+
+		&:hover {
+			&::before,
+			&::after,
+			.llms-lesson-title {
+				color: $orange;
+			}
+		}
+	}
+}
+
+.llms-lesson-button-wrapper {
+	input[type="submit"] {
+		background-color: $orange;
+		&:hover {
+			background-color: $green;
+		}
+	}
+}
+
+.entry-footer {
+	margin: 30px 10px;
+
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	h2,
+	p {
+		text-align: center;
+	}
+
+	.llms-access-plans.cols-2 .llms-access-plan:first-child {
+		margin-bottom: 15px;
+	}
+	// .llms-access-plans.cols-2 .llms-access-plan{
+	//   float: none;
+	//   width: 100%;
+	//   margin: 0 auto;
+
+	//   &:first-child {
+	//     margin-bottom: 15px;
+	//   }
+	// }
+}
+
+@media only screen and (min-width: 800px) {
+	// .entry-footer .llms-access-plans.cols-2 .llms-access-plan{
+	//   float: right;
+	//   width: 48%;
+	//   margin: auto;
+
+	//   &:first-child {
+	//     float: left;
+	//     margin-bottom: 0;
+	//   }
+	// }
+
+	.content {
+		margin-top: 0;
+	}
+
+	.llms-course-navigation {
+		.llms-course-nav {
+			.llms-pre-text {
+				margin-top: 0;
+			}
+
+			.llms-lesson-title {
+				display: block;
+				padding-right: 40px;
+			}
+		}
+	}
+}

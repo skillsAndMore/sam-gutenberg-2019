@@ -1,0 +1,18 @@
+/* Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: $dark-gray;
+	color: $white;
+	font-size: 16px;
+	padding: 40px 5%;
+	text-align: center;
+	p {
+		margin-bottom: 0;
+	}
+
+	a:hover{
+		color: $white;
+		text-decoration: underline;
+	}
+}

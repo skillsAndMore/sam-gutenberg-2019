@@ -1,0 +1,24 @@
+.entry-title{
+  text-align: center;
+}
+.entry-title, .entry-content{
+  margin-top: 30px;
+}
+
+h2, .tac{
+  text-align: center;
+}
+.flex{
+  justify-content: center;
+}
+.courses .f-1-4{
+  margin: 0 1%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .courses .f-1-4{
+    margin: 0 1%;
+    max-width: 23%;
+  } 
+}

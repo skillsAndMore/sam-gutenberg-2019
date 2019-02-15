@@ -1,0 +1,27 @@
+/* Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+
+.site-container {
+	background-color: $color-container-bg;
+	margin: 0 auto;
+}
+
+.site-inner {
+ 	background-color: $light-gray;
+	clear: both;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#bbpress-forums{
+	li.bbp-forum-freshness, li.bbp-topic-freshness{
+		display: none;
+	}
+
+	li.bbp-forum-topic-count, li.bbp-topic-voice-count, li.bbp-forum-reply-count, li.bbp-topic-reply-count{
+		width: 25%;
+	}
+}

@@ -1,0 +1,77 @@
+.course-desc {
+	margin: 30px auto 0;
+}
+.llms-loop {
+	margin: 60px auto;
+}
+.llms-loop-link {
+	position: relative;
+
+	.llms-featured-image:hover {
+		background: linear-gradient(139deg, $green, $orange);
+		background-size: 400% 400%;
+
+		-webkit-animation: hoverCorso 3s ease infinite;
+		-moz-animation: hoverCorso 3s ease infinite;
+		animation: hoverCorso 3s ease infinite;
+	}
+	.llms-progress {
+		position: absolute;
+		top: 0;
+	}
+
+	.progress-bar-complete {
+		background-color: $orange;
+	}
+
+	.llms-loop-title {
+		margin-top: 20px;
+	}
+
+	.llms-difficulty {
+		background-color: $white;
+		position: relative;
+	}
+}
+
+.llms-loop-item-content {
+	background-color: transparent;
+	padding-bottom: 0;
+	position: relative;
+
+	&:hover {
+		background-color: $white;
+	}
+
+	.llms-loop-title {
+		display: none;
+	}
+
+	.llms-progress .llms-progress-bar {
+		background-color: $dark-gray;
+		position: absolute;
+		z-index: 20;
+	}
+
+	.llms-meta {
+		color: $dark-gray;
+		padding: 10px 20px;
+		font-size: 18px;
+		text-align: right;
+	}
+
+	.llms-course-length {
+		display: none;
+	}
+
+	.price {
+		background-color: $dark-gray;
+		color: $white;
+		font-size: 12px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 15px;
+		z-index: 10;
+	}
+}

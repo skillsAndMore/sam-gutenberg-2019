@@ -1,0 +1,29 @@
+.header-intro {
+  p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .search-form{
+    margin: 0 auto;
+    max-width: 300px;
+
+    input{
+      float: left;
+      width: 70%;
+    }
+
+    input[type="submit"]{
+      clip: unset;
+      height: auto;
+      width: 25%;
+      margin: 0;
+      padding: 13px 15px;
+      position: static;
+    }
+  }
+}
+
+&.full-width-content .content{
+  margin-top: 30px;
+}

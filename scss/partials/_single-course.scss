@@ -1,0 +1,159 @@
+.content {
+	margin-top: 30px;
+}
+
+.llms-meta-info {
+	margin: 10px auto;
+}
+
+.llms-instructor-info .llms-instructors .llms-author {
+	background-color: $white;
+	border-color: $green;
+	.avatar {
+		border-color: $green;
+		vertical-align: middle;
+	}
+	.label {
+		display: none;
+	}
+}
+
+.llms-progress .llms-progress-bar {
+	background-color: $dark-gray;
+}
+
+.llms-syllabus-wrapper {
+	margin-bottom: 60px;
+	.llms-section-title {
+		font-size: 32px;
+		margin-bottom: 25px;
+	}
+}
+
+.llms-lesson-preview {
+	width: 100%;
+
+	.llms-lesson-link {
+		padding: 20px 30px;
+		background-color: $white;
+		@include transition(background, 0.6s, ease-in-out);
+
+		&.llms-lesson-link-locked {
+			box-shadow: none;
+		}
+
+		&:hover {
+			background-color: $green;
+		}
+
+		.llms-lesson-title {
+			font-weight: 300;
+			font-size: 22px;
+		}
+
+		.llms-lesson-counter {
+			display: none;
+		}
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.llms-extra {
+		width: 10%;
+		text-align: right;
+
+		+ .llms-main {
+			width: 90%;
+		}
+
+		.llms-icon-free {
+			background-color: $green;
+		}
+	}
+
+	&.is-complete .llms-lesson-complete {
+		color: $orange;
+	}
+}
+
+&.single .entry {
+	margin-bottom: 0;
+}
+
+// Sezione Testimonianze
+#old_reviews {
+	h3 {
+		font-size: 32px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	hr {
+		color: transparent;
+		height: 60px;
+		text-align: center;
+
+		button {
+			margin: 0 10px;
+		}
+	}
+	.llms_review {
+		background-color: $white !important;
+		border-radius: 6px;
+		padding: 30px 40px !important;
+		margin-bottom: 0 !important;
+		text-align: center;
+
+		p:last-of-type {
+			margin-bottom: 0 !important;
+		}
+		h5 {
+			font-size: 24px !important;
+			margin-bottom: 6px !important;
+			strong {
+				font-weight: normal;
+			}
+		}
+	}
+}
+#thank_you_box {
+	text-align: center;
+	h2 {
+		color: $mid-gray;
+		font-size: 18px;
+		margin: 20px auto;
+	}
+}
+
+#review_box {
+	background-color: $white;
+	border-radius: 6px;
+	padding: 20px 30px;
+
+	input,
+	textarea {
+		color: $mid-gray;
+		margin-bottom: 10px;
+	}
+
+	.button {
+		color: $white;
+	}
+}
+
+.llms-access-plans.cols-2 .llms-access-plan:first-child {
+	margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+	.llms-lesson-preview {
+		.llms-lesson-link {
+			.llms-lesson-counter {
+				display: block;
+			}
+		}
+	}
+}

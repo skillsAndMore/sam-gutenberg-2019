@@ -1,0 +1,88 @@
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background-color: $green;
+	text-align: center;
+}
+
+/* Site Title and Description
+--------------------------------------------- */
+.title-area{
+	float: left;
+}
+.site-title {
+	display: none;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	line-height: $heading-font-line-height;
+	a {
+		color: $color-link-hover;
+		&:hover {
+			color: $color-link-hover;
+		}
+	}
+}
+
+.header-image {
+	.site-title > a {
+		background-position: center center !important;
+		background-size: 300px 57px !important;
+		float: left;
+		min-height: 57px;
+		width: 100%;
+	}
+	.site-description,
+	.site-title {
+		display: block;
+		text-indent: -9999px;
+	}
+}
+
+.site-description {
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	margin-bottom: 10px;
+	line-height: $heading-font-line-height;
+}
+
+/* Header Widget Area
+--------------------------------------------- */
+
+.header-widget-area .widget_text {
+	margin-top: 10px;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+
+/* Header Intro
+--------------------------------------------- */
+.header-intro {
+	clear: both;
+	.wrap{
+		border-top: 1px solid rgba($white, .7);
+		color: $white;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 70px;
+		padding-bottom: 40px;
+
+		h2{
+			color: $white;
+		}
+		p{
+			max-width: 900px;
+			margin: 0 auto;
+		}
+	}
+	.btns{
+		padding-bottom: 40px;
+	}
+	.btn{
+		margin: 0 20px;
+	}
+}

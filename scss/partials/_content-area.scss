@@ -1,0 +1,247 @@
+/* Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* Entries
+--------------------------------------------- */
+
+.entry {
+	border-bottom: 5px solid #f5f5f5;
+	margin-bottom: 60px;
+}
+
+.page {
+	&.page-template-page_blog-php .entry {
+		border-bottom: 5px solid #f5f5f5;
+		margin-bottom: 60px;
+	}
+	.entry {
+		border-bottom: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.single .entry {
+	border-bottom: 0;
+	margin-bottom: 30px;
+}
+
+.entry-content {
+	ol,
+	ul {
+		margin-bottom: 30px;
+		margin-left: 40px;
+	}
+	ol > li {
+		list-style-type: decimal;
+	}
+	ul > li {
+		list-style-type: disc;
+	}
+	ol ol,
+	ul ul {
+		margin-bottom: 0;
+	}
+	:not(pre) code {
+		background-color: $white;
+		color: #000;
+		padding: 2px 4px;
+	}
+}
+
+.entry-content a:hover,
+.entry-title a:hover {
+	text-decoration: underline;
+}
+
+/* Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 24px;
+	margin-top: -10px;
+}
+
+.entry-footer .entry-meta {
+	font-weight: 400;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.pagination {
+	clear: both;
+	margin: 60px 0;
+}
+
+.adjacent-entry-pagination {
+	margin-bottom: 0;
+}
+
+.archive-pagination {
+	li {
+		display: inline;
+		a {
+			background-color: $color-button-bg;
+			color: $color-light-link;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			padding: 8px 12px;
+			&:hover {
+				background-color: $color-button-hover;
+			}
+		}
+	}
+	.active a {
+		background-color: $color-button-hover;
+	}
+}
+
+/* Comments
+--------------------------------------------- */
+
+p.comment-meta {
+	margin-bottom: 40px;
+}
+
+.entry-comments {
+	.comment,
+	.comment-reply {
+		margin-bottom: 40px;
+	}
+}
+
+.comment-respond {
+	margin-bottom: 60px;
+	.comment-form p {
+		font-size: 14px;
+	}
+}
+
+.entry-comments .comment:last-child {
+	margin-bottom: 0;
+}
+
+.entry-comments {
+	padding-top: 20px;
+	font-size: 14px;
+	.comment {
+		border-bottom: 5px solid #f5f5f5;
+		color: $dark-gray;
+		clear: both;
+		margin-top: 30px;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 6px;
+
+		article {
+			margin-bottom: 40px;
+		}
+
+		p {
+			line-height: 1.3;
+			margin-bottom: 10px;
+		}
+
+		&.bypostauthor {
+			background-color: $dark-gray;
+			color: $light-gray;
+
+			> article .comment-header img {
+				border-color: $dark-gray;
+			}
+		}
+	}
+
+	.comment-header {
+		margin-top: -20px;
+		img {
+			margin-top: -25px;
+			border-color: $white;
+		}
+	}
+	.comment-author {
+		font-size: 14px;
+		margin: 10px 0 10px;
+	}
+	.children > .comment {
+		margin: 0;
+		border: 3px solid $light-gray;
+	}
+	.children .comment-header img {
+		border-color: $white;
+	}
+	.children .comment-reply {
+		margin-bottom: 0;
+	}
+}
+
+.comment-header {
+	font-size: 16px;
+}
+
+.comment-notes,
+.entry-pings .reply {
+	display: none;
+}
+
+p {
+	&.comment-form-comment {
+		margin-bottom: 20px;
+	}
+	&.form-submit {
+		margin: 0;
+	}
+}
+
+.comment-list li {
+	list-style-type: none;
+}
+
+/* Bacheca Studente 
+--------------------------------------------- */
+.llms-student-dashboard {
+	.llms-loop-item-content,
+	.llms-loop-item-content:hover {
+		background-color: transparent;
+	}
+	.llms-loop-item {
+		.lifterlms-price,
+		.llms-difficulty,
+		.llms-enroll-status,
+		.llms-enroll-date,
+		.llms-course-length {
+			display: none;
+		}
+
+		.llms-loop-title {
+			text-align: center;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+		img:hover {
+			background: linear-gradient(139deg, #1abc9c, #ef6c00);
+			background-size: auto auto;
+			background-size: 400% 400%;
+			animation: hoverCorso 3s ease infinite;
+		}
+	}
+}
