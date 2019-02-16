@@ -386,9 +386,15 @@ hr.wp-block-separator {
 	width: 100%;
 }
 
-.entry-content .wp-block-gallery {
-	padding-left: 0;
+.entry-content{
+	.wp-block-media-text{
+		margin-bottom: 30px;
+	}
+	.wp-block-gallery {
+		padding-left: 0;
+	}
 }
+ 
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
