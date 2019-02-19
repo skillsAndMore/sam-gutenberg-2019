@@ -21,16 +21,26 @@ define( 'CHILD_THEME_URL', 'https://skillsandmore.org' );
 define( 'CHILD_THEME_VERSION', '0.1.0' );
 
 // Aggiungo struttura HTML5.
-add_theme_support('html5', array('search-form', 'comment-form', 'comment-list'));
+add_theme_support(
+	'html5',
+	array(
+		'search-form',
+		'comment-form',
+		'comment-list',
+	)
+);
 
 //* Aggiungo meta tag viewport
-add_theme_support('genesis-responsive-viewport');
+add_theme_support( 'genesis-responsive-viewport' );
 
-//* Aggiungo colonne footer
-add_theme_support('genesis-footer-widgets', 4);
+// Aggiungo colonne footer.
+add_theme_support( 'genesis-footer-widgets', 4 );
 
-//* Aggiungo page script agli abbonamenti
-add_post_type_support('llms_membership', 'genesis-scripts');
+// Aggiungo page script agli abbonamenti.
+add_post_type_support( 'llms_membership', 'genesis-scripts' );
+
+// Adds helper functions.
+require_once get_stylesheet_directory() . '/lib/gutenberg.php';
 
 //* Enqueue Google Fonts
 add_action('wp_enqueue_scripts', 'genesis_script_styles');
@@ -472,9 +482,3 @@ add_action( 'wp_print_styles', 'remove_grunion_style' );
 function remove_grunion_style() {
 	wp_deregister_style( 'grunion.css' );
 }
-
-/**
- * 6 - Aggiunta compatibilità Gutenberg
- */
-add_theme_support( 'align-wide' );
-add_theme_support( 'editor-styles' );
