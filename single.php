@@ -39,12 +39,4 @@ function sam_related_post(){
 
 add_action( 'genesis_after_entry', 'sam_price_table', 4 );
 
-add_action( 'wp_footer', 'sam_single_load_script' );
-function sam_single_load_script(){
-	?>
-		<script>
-			fbq('track', 'ViewContent');
-		</script>
-	<?php
-}
 genesis();
