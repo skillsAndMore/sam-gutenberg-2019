@@ -355,10 +355,24 @@ a.swp_CTT .sw-click-to-tweet {
 --------------------------------------------- */
 
 // CTA
-.ab-block-cta{
-	.ab-button{
-		&:hover{
+.ab-block-cta {
+	.ab-button {
+		&:hover {
 			text-decoration: none;
+		}
+	}
+}
+
+/* Advanced Gutenberg Blocks
+---------------------------------------------------------------------------- */
+
+// Intro Block
+.entry-content {
+	.wp-block-advanced-gutenberg-blocks-intro {
+		margin-top: 15px;
+		p {
+			color: darken($mid-gray, 10%);
+			font-size: 1.2em;
 		}
 	}
 }
