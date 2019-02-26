@@ -30,7 +30,7 @@
 	}
 	main,
 	[role="main"] {
-		max-width: 1000px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 	.site-inner {
@@ -53,7 +53,7 @@
 		/* 660px */
 	}
 	.full-width-content .content {
-		width: 90%;
+		width: 50vw;
 		margin: 0 auto;
 		float: none;
 	}
@@ -364,7 +364,7 @@
 			h4,
 			h5,
 			h6 {
-				margin: 30px 11%;
+				margin: 30px 2%;
 			}
 
 			h2 {
