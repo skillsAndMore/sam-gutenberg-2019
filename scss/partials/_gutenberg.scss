@@ -395,13 +395,19 @@ hr.wp-block-separator {
 	}
 }
 
-/* AGB
+/* Advanced Gutenberg Blocks
 ---------------------------------------------------------------------------- */
+
+// Intro Block
+.entry-content {
+}
 .single-post .entry-content {
-	.CodeMirror pre {
-		margin: 0 auto;
-		&::before {
-			display: none;
+	.wp-block-advanced-gutenberg-blocks-intro {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		p {
+			color: darken($mid-gray, 10%);
+			font-size: 1.4em;
 		}
 	}
 
@@ -420,6 +426,13 @@ hr.wp-block-separator {
 	.wp-block-advanced-gutenberg-blocks-code {
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+
+	.CodeMirror pre {
+		margin: 0 auto;
+		&::before {
+			display: none;
+		}
 	}
 }
 

@@ -362,18 +362,3 @@ a.swp_CTT .sw-click-to-tweet {
 		}
 	}
 }
-
-/* Advanced Gutenberg Blocks
----------------------------------------------------------------------------- */
-
-// Intro Block
-.entry-content {
-	.wp-block-advanced-gutenberg-blocks-intro {
-		margin-top: 15px;
-		margin-bottom: 15px;
-		p {
-			color: darken($mid-gray, 10%);
-			font-size: 1.2em;
-		}
-	}
-}
