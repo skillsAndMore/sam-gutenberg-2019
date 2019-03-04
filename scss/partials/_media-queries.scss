@@ -53,9 +53,10 @@
 		/* 660px */
 	}
 	.full-width-content .content {
-		width: 50vw;
+		width: 70vw;
 		margin: 0 auto;
 		float: none;
+		max-width: 960px;
 	}
 	.footer-widgets-3,
 	.sidebar {
@@ -346,34 +347,6 @@
 		.content {
 			margin-top: 30px;
 			width: 75%;
-		}
-	}
-
-	/* Sistemo singolo articolo
-    --------------------------------------------- */
-	.single-post {
-		.entry-content {
-			ul,
-			ol {
-				margin-left: 15%;
-				margin-right: 15%;
-			}
-
-			h2,
-			h3,
-			h4,
-			h5,
-			h6 {
-				margin: 30px 2%;
-			}
-
-			h2 {
-				font-size: 38px;
-			}
-
-			> p:first-child {
-				font-size: 20px;
-			}
 		}
 	}
 
