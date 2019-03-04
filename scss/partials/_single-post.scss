@@ -101,7 +101,8 @@
 .entry-content p,
 .entry-footer,
 .comment-respond,
-.entry-comments {
+.entry-comments,
+.akismet_comment_form_privacy_notice {
 	margin-left: 3%;
 	margin-right: 3%;
 }
@@ -126,10 +127,6 @@
 }
 
 @media only screen and (min-width: 800px) {
-	// .entry-content p,
-	.entry-footer,
-	.comment-respond,
-	.entry-comments,
 	div.sharedaddy {
 		margin-left: 12%;
 		margin-right: 12%;

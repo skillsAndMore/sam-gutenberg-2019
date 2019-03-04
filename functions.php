@@ -190,7 +190,7 @@ function sam_user_contactmethods( $fields ) {
 }
 
 // Creo un box author personalizzato.
-add_action( 'genesis_entry_footer', 'sam_author_box', 13 );
+add_action( 'genesis_entry_footer', 'sam_author_box', 8 );
 function sam_author_box() {
 
 	if ( is_singular( 'post' ) ) {

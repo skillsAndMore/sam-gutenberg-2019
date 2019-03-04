@@ -17,7 +17,7 @@ function sam_do_post_title(){
 }
 
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-add_action( 'genesis_entry_footer', 'genesis_post_info', 8 );
+add_action( 'genesis_entry_footer', 'genesis_post_info', 9 );
 
 //* Modifico le informazioni nelle post info
 add_filter( 'genesis_post_info', 'sam_post_info_filter' );
