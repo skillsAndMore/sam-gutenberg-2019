@@ -3,7 +3,9 @@
 /* Aggiungo thumbnail */
 add_action( 'genesis_before_entry', 'featured_post_image', 8 );
 function featured_post_image() {
-	the_post_thumbnail('post-image');
+
+	echo '<figure class="alignwide">' . get_the_post_thumbnail( get_the_ID(), 'post-image' ) . '</figure>';
+
 }
 
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
