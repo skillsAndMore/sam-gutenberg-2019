@@ -47,7 +47,7 @@ function sam_front_page_custom_loop(){
 					<path fill="#EF6C00" fill-rule="nonzero" d="M333.8 147.95h101.1c5.5 0 9.9-4.4 9.9-9.9s-4.4-9.9-9.9-9.9H333.8c-5.5 0-9.9 4.4-9.9 9.9 0 5.4 4.5 9.9 9.9 9.9zm101.2 36.1c5.5 0 9.9-4.4 9.9-9.9s-4.4-9.9-9.9-9.9H333.8c-5.5 0-9.9 4.4-9.9 9.9s4.4 9.9 9.9 9.9H435z"/>
 				</svg>
 				<h3>Community affiatata</h3>
-				<p>Non c’&egrave; crescita senza confronto! Grazie al forum privato tutti gli skillati si confrontano ogni giorno su argomenti che riguardano carriera, interessi ma anche dubbi.</p>
+				<p>Non c’&egrave; crescita senza confronto! Grazie alla chat esclusiva tutti gli Skillati si confrontano ogni giorno su argomenti che riguardano carriera, interessi ma anche dubbi.</p>
 			</div>
 
 			<div class="value f-1-3">

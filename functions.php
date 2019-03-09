@@ -384,7 +384,7 @@ function sam_price_table() {
 				<p class="price">a partire da <small>&euro;</small>19</p>
 				<ul>
 					<li>singolo corso</li>
-					<li class="barrato">accesso forum</li>
+					<li class="barrato">accesso chat</li>
 					<li class="barrato">appuntamenti dal vivo</li>
 					<li class="barrato">Q&A settimanali</li>
 					<li class="barrato">riunioni 1-to-1</li>
@@ -400,7 +400,7 @@ function sam_price_table() {
 				</p>
 				<ul>
 					<li>tutti i corsi</li>
-					<li>accesso forum</li>
+					<li>accesso chat</li>
 					<li>appuntamenti dal vivo</li>
 					<li>Q&A settimanali</li>
 					<li>riunioni 1-to-1</li>
