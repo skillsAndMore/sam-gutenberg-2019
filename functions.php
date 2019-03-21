@@ -482,3 +482,43 @@ add_action( 'wp_print_styles', 'remove_grunion_style' );
 function remove_grunion_style() {
 	wp_deregister_style( 'grunion.css' );
 }
+
+// Escludo specifiche lezioni da Sitemap di Yoast.
+add_filter( 'wpseo_exclude_from_sitemap_by_post_ids', function () {
+	$lezioni = array(
+		20460, // Usa percentuali e le unità viewport come un professionista.
+		19522, // Crea un repo per il tuo progetto Open Source.
+		20459, // Ridimensiona le animazioni con le font size.
+		20706, // Quali temi possono essere resi compatibili?.
+		20458, // Come rendere le tue animazioni responsive.
+		20446, // Offri un suggerimento per lo scroll.
+		20442, // Anima gli elementi nella tua pagina
+		20445, // Presentiamo il titolo della pagina.
+		20440, // Come funzionano le animazioni CSS?.
+		20454, // Includi le SVG nel modo corretto.
+		20457, // Presenta il tuo logo in sequenza.
+		20449, // Mostriamo il contenuto in hover.
+		20453, // Crea il tuo effetto parallasse.
+		20444, // Animiamo l'immagine di sfondo.
+		20441, // Rispondi alle azioni dei visitatori.
+		20447, // Semplifichiamo i keyframe.
+		20450, // Animiamo il bottone.
+		19529, // Repo locale e remoto, come gestirli?.
+		19531, // Scopri i branch e sviluppa singole caratteristiche.
+		19521, // GitHub e BitBucket, perché sono utili e come usarli.
+		19511, // Installiamo Git e facciamo amicizia con il Terminale.
+		19534, // Come Gestire i conflitti... di codice.
+		19510, // Cosa è il Versioning e come funziona Git.
+		19516, // Creiamo il nostro primo Repository.
+		19519, // Prendi il controllo del tuo Repository.
+		19535, // Crea una pagina per il tuo progetto.
+		19518, // Salva le modifiche in modo intelligente.
+		20716, // Gestisci le dimensioni di default.
+		20711, // Applica i tuoi stili a Gutenberg.
+		20707, // Prepara il tuo tema a Gutenberg.
+		20709, // Eredita gli stili da Gutenberg.
+		20708, // Sfrutta i nuovi allineamenti.
+		20715, // Suggerisci i colori da usare.
+	);
+	return $lezioni;
+} );
