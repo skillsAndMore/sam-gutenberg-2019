@@ -519,6 +519,17 @@ add_filter( 'wpseo_exclude_from_sitemap_by_post_ids', function () {
 		20709, // Eredita gli stili da Gutenberg.
 		20708, // Sfrutta i nuovi allineamenti.
 		20715, // Suggerisci i colori da usare.
+		21146, // I package manager più comuni che puoi usare.
+		21414, // Altri comandi per essere più pericolosi.
+		21152, // Esempi pratici dell'utilità di WP CLI.
+		21142, // Scrivi il tuo primo script bash.
+		21148, // Che cosa è SSH e perché usarlo.
+		21145, // Personalizza il terminale.
+		21151, // Workflow Gulp per Sass.
+		21144, // Cambia la tua shell.
+		21107, // Comandi base per la sopravvivenza.
+		21153, // Crea e mantieni un repository GitHub.
+		21149, // Configura e usa le credenziali per connetterti.
 	);
 	return $lezioni;
 } );
