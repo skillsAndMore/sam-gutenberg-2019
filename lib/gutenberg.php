@@ -26,12 +26,12 @@ function sam_add_gutenberg_support() {
 		array(
 			array(
 				'name' => 'Verde SAM',
-				'slug' => 'verde-sam',
+				'slug' => 'green',
 				'color' => '#1ABC9C',
 			),
 			array(
 				'name' => 'Arancione SAM',
-				'slug' => 'arancione-sam',
+				'slug' => 'orange',
 				'color' => '#EF6C00',
 			),
 			array(
@@ -40,8 +40,18 @@ function sam_add_gutenberg_support() {
 				'color' => '#FFF',
 			),
 			array(
-				'name' => 'Grigio',
-				'slug' => 'grigio',
+				'name' => 'Light Gray',
+				'slug' => 'light-gray',
+				'color' => '#f5f5f5',
+			),
+			array(
+				'name' => 'Mid Gray',
+				'slug' => 'mid-gray',
+				'color' => '#9b9b9b',
+			),
+			array(
+				'name' => 'Dark Gray',
+				'slug' => 'dark-gray',
 				'color' => '#333',
 			),
 		)
