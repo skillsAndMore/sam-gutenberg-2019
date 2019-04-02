@@ -452,11 +452,11 @@ hr.wp-block-separator {
 	margin-left: calc(-100vw / 2 + 100% / 2);
 	margin-right: calc(-100vw / 2 + 100% / 2);
 	max-width: 100vw;
+	text-align: center;
 
 	.wave-separator {
 		.front,
-		.middle,
-		.bottom {
+		.middle {
 			animation: galleggia 7s linear alternate infinite;
 		}
 		margin-bottom: -8px;

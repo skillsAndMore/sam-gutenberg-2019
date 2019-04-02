@@ -1,24 +1,40 @@
-.attachment-post-thumbnail {
-	display: block;
-	margin: 0 auto;
-}
-
-main.content {
-	margin-top: 0;
-}
-
-.entry-content,
-.entry-header {
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-
-	ul {
-		text-align: left;
-	}
-}
-
 main.content {
 	margin-top: 0 !important;
+}
+
+header {
+	.title-area {
+		float: none;
+		margin-bottom: 7px;
+		text-align: center;
+	}
+}
+.entry-content {
+	ul {
+		font-size: 16px;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		li {
+			margin-bottom: 6px;
+		}
+	}
+
+	.schema-faq {
+		font-size: 16px;
+
+		.schema-faq-answer {
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.wp-block-column {
+		figure {
+			margin-bottom: 0;
+			figcaption {
+				color: darken($green, 10%);
+				margin-bottom: 0;
+			}
+		}
+	}
 }

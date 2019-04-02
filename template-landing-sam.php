@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Template Name: Landing SAM
  *
@@ -7,21 +6,19 @@
  * @subpackage SkillsAndMore
  */
 
-// Add custom class.
-add_filter('body_class', 'cannasci_add_student_dashboard_wrapper_class' );
-function cannasci_add_student_dashboard_wrapper_class( $classes ){
+/**
+ *  Add custom bodyclass.
+ *
+ * @param array $classes La nuova classe per l'elemento body.
+ */
+function sam_wrapper_class( $classes ) {
 	$classes[] = 'landing-page-sam';
 	return $classes;
 }
+add_filter( 'body_class', 'sam_wrapper_class' );
 
-// Add featured image
-add_action( 'genesis_before_content', 'sam_add_featured_image' );
-function sam_add_featured_image(){
-	the_post_thumbnail();
-}
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
-// remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-
-
+remove_action( 'genesis_header_right', 'genesis_do_nav' );
 
 genesis();

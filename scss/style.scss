@@ -111,8 +111,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 //* Landing Page SAM
-.landing-page-sam,
-body.page-template-template-big-title {
+body.landing-page-sam.page.full-width-content {
 	@import "partials/landing-sam";
 }
 //* Pagamento
