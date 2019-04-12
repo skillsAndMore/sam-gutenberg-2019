@@ -57,4 +57,31 @@ function sam_add_gutenberg_support() {
 		)
 	);
 
+	// Dichiaro le grandezze dei font da usare nel template.
+	add_theme_support(
+		'editor-font-sizes',
+		array(
+			array(
+				'name' => 'Piccolo',
+				'size' => 13,
+				'slug' => 'small',
+			),
+			array(
+				'name' => 'Normale',
+				'size' => 17,
+				'slug' => 'normal',
+			),
+			array(
+				'name' => 'Medio',
+				'size' => 26,
+				'slug' => 'mid',
+			),
+			array(
+				'name' => 'Grande',
+				'size' => 38,
+				'slug' => 'big',
+			),
+		)
+	);
+
 }
