@@ -48,7 +48,7 @@ $fields = LLMS_Person_Handler::get_available_fields( 'checkout', $field_data );
 		<?php if ( ! $free ) : ?>
 			<section class="llms-checkout-section order-summary">
 
-				<h4 class="llms-form-heading"><?php _e( 'Order Summary', 'lifterlms' ); ?></h4>
+				<h4 class="llms-form-heading"><?php _e( 'Order Summary', 'lifterlms' ); ?> <a href="#llms-coupon-toggle" title="Hai un coupon?" class="hidden-coupon"><span><?php _e( 'Click here to enter your code', 'lifterlms' ); ?></span></a></h4>
 
 				<div class="llms-checkout-section-content">
 
