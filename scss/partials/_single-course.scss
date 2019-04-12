@@ -22,6 +22,12 @@
 	background-color: $dark-gray;
 }
 
+.wp-block-llms-course-continue-button {
+	.llms-course-continue-button {
+		@extend .btn;
+		@extend .gray;
+	}
+}
 .llms-syllabus-wrapper {
 	margin-bottom: 60px;
 	.llms-section-title {
