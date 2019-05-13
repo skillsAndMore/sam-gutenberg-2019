@@ -214,9 +214,11 @@
 	width: 100vw;
 }
 
-.entry-content .wp-block-cover .wp-block-cover-text {
-	font-size: 48px;
+.entry-content .wp-block-cover .wp-block-cover__inner-container {
 	max-width: 900px;
+	h1 {
+		font-size: 3em;
+	}
 }
 
 .wp-block-cover,
