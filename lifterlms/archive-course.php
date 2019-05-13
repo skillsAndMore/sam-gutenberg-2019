@@ -28,6 +28,8 @@ if( is_tax() ){
 
 }
 
+remove_action( 'lifterlms_after_loop_item_title', 'lifterlms_template_loop_difficulty', 20 );
+
 add_action( 'genesis_before_footer', 'sam_price_table', 4 );
 
 add_action( 'genesis_before_footer', 'sam_display_post_course_archive', 5 );
