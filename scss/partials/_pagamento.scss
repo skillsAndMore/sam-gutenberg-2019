@@ -86,6 +86,20 @@ form.llms-login {
 	h5 {
 		margin-bottom: 10px;
 	}
+
+	&.on-sale {
+		h5.price-regular {
+			display: inline-block;
+			font-family: $base-font-family;
+			font-size: 14px;
+			font-weight: 400;
+			text-decoration: line-through;
+		}
+		.price-sale {
+			font-family: $tit;
+			font-size: 20px;
+		}
+	}
 }
 
 #llms_remember {
