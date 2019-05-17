@@ -154,6 +154,22 @@
 	margin-bottom: 15px;
 }
 
+.llms-access-plan.on-sale {
+	.llms-access-plan-price {
+		.stamp {
+			background-color: $orange;
+		}
+		.price-regular .lifterlms-price {
+			font-size: 14px;
+			font-family: $base-font-family;
+			font-weight: 400;
+		}
+		.price-sale .lifterlms-price {
+			font-size: 20px;
+		}
+	}
+}
+
 @media only screen and (min-width: 800px) {
 	.llms-lesson-preview {
 		.llms-lesson-link {
