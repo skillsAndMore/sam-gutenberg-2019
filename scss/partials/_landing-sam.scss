@@ -38,4 +38,27 @@ header {
 			}
 		}
 	}
+
+	// Syllabus
+	.llms-syllabus-wrapper {
+		.llms-section-title {
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.llms-lesson-preview {
+			width: 100%;
+			.llms-lesson-link {
+				background-color: transparent;
+			}
+			.llms-lesson-link-locked {
+				box-shadow: none;
+			}
+			.llms-lesson-title {
+				font-weight: 300;
+			}
+			.llms-lesson-excerpt {
+				font-size: 16px;
+			}
+		}
+	}
 }
