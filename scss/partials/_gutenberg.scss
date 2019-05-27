@@ -452,10 +452,7 @@ hr.wp-block-separator {
 }
 
 .wp-block-cta {
-	margin-bottom: -20px;
-	margin-top: -30px;
-	margin-left: calc(-100vw / 2 + 100% / 2);
-	margin-right: calc(-100vw / 2 + 100% / 2);
+	margin: 20px calc(-100vw / 2 + 100% / 2);
 	max-width: 100vw;
 	text-align: center;
 
