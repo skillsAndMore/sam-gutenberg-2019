@@ -414,6 +414,7 @@ hr.wp-block-separator {
 
 .entry-content {
 	.wp-block-media-text {
+		display: block;
 		margin-bottom: 30px;
 	}
 	.wp-block-gallery {
@@ -532,12 +533,17 @@ hr.wp-block-separator {
 ---------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 600px) {
-	.entry-content .wp-block-columns {
-		display: flex;
-	}
-
-	.entry-content .wp-block-columns .wp-block-column {
-		flex: 1;
+	.entry-content {
+		.wp-block-columns .wp-block-column {
+			flex: 1;
+		}
+		.wp-block-columns {
+			display: flex;
+		}
+		.wp-block-media-text {
+			display: grid;
+			margin-bottom: 30px;
+		}
 	}
 }
 
