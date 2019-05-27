@@ -50,7 +50,8 @@ header {
 			.llms-lesson-link {
 				background-color: transparent;
 				&:hover {
-					background-color: #f1f1f1;
+					background-color: $white;
+					text-decoration: none;
 				}
 			}
 			.llms-lesson-link-locked {
@@ -62,6 +63,40 @@ header {
 			}
 			.llms-lesson-excerpt {
 				font-size: 16px;
+			}
+			.llms-extra {
+				float: none;
+				width: 100%;
+				text-align: left;
+				margin-left: 0;
+
+				+ .llms-main {
+					float: none;
+					width: 100%;
+				}
+
+				span {
+					display: inline-block;
+					font-size: 12px;
+				}
+
+				.llms-icon-free {
+					background-color: $green;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.llms-lesson-preview {
+		.llms-extra {
+			width: 10%;
+			text-align: right;
+
+			+ .llms-main {
+				width: 89%;
+				margin-right: 1%;
 			}
 		}
 	}
