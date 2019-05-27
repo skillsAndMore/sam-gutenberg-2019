@@ -41,22 +41,28 @@
 	}
 }
 
-.llms-course-outline {
+.llms-widget-syllabus {
+	.section-header {
+		.llms-collapse-caret {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+
 	.section-title {
 		display: block;
 		font-family: $tit;
 		font-size: 18px;
 		font-weight: 300;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
-}
 
-.llms-widget-syllabus {
 	.llms-lesson-complete.done {
 		color: $orange;
 	}
 
 	.lesson-title {
+		font-size: 14px;
 		a {
 			color: #ccc;
 
