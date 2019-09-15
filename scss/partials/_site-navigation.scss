@@ -14,7 +14,7 @@
 		color: $color-menu-link;
 		display: block;
 		padding: 20px;
-      	line-height: 1.5;
+		line-height: 1.5;
 		&:hover {
 			color: $color-link;
 		}
@@ -66,7 +66,7 @@
 --------------------------------------------- */
 
 .nav-primary {
-	.wrap{
+	.wrap {
 		margin: 0;
 	}
 	padding-bottom: 10px;
@@ -81,7 +81,9 @@
 		display: none;
 	}
 	.genesis-nav-menu {
-		a:hover, .current-menu-item > a, .sub-menu .current-menu-item > a:hover {
+		a:hover,
+		.current-menu-item > a,
+		.sub-menu .current-menu-item > a:hover {
 			color: $color-current-menu;
 			background-color: $light-gray;
 			text-decoration: none;
@@ -107,12 +109,13 @@
 	display: block;
 	text-align: right;
 	&::before {
-		color: #000;
-		content: "\f333";
+		background: url(images/hamburger-menu.png) no-repeat center 60%;
+		background-size: 16px;
+		content: "";
 		display: inline-block;
-		font: normal 20px/1 'dashicons';
 		margin: 0 auto;
-		padding: 10px;
+		width: 33px;
+		height: 33px;
 	}
 }
 
@@ -133,48 +136,48 @@
 	}
 }
 
-.nav-primary .responsive-menu-icon::before{
-  color: $color-light-link;
-  padding-top: 15px;
+.nav-primary .responsive-menu-icon::before {
+	color: $color-light-link;
+	padding-top: 15px;
 }
-.menu-loggato .responsive-menu-icon::before{
-  color: $color-light-link;
-  padding-top: 5px;
+.menu-loggato .responsive-menu-icon::before {
+	color: $color-light-link;
+	padding-top: 5px;
 }
 
 /* Logged User Navigation
 --------------------------------------------- */
-.menu-loggato{
-  background-color: $dark-gray;
-  color: $white;
-  font-size: 15px;
-  .user span{
-    font-weight:bold;
-  }
-  a{
-    color: $white;
-    font-weight: 400;
-    &:hover{
-      color: $orange;
-      text-decoration: underline;
-    }
-  }
+.menu-loggato {
+	background-color: $dark-gray;
+	color: $white;
+	font-size: 15px;
+	.user span {
+		font-weight: bold;
+	}
+	a {
+		color: $white;
+		font-weight: 400;
+		&:hover {
+			color: $orange;
+			text-decoration: underline;
+		}
+	}
 
-  .flex{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 15px 0;
-  }
-  .f-1-5{
-    float: left;
-  }
-  .f-1-2{
-    text-align: right;
-  }
-  .user img{
-    vertical-align: middle;
-  }
-  .menu{
-    line-height: 2;
-  }
+	.flex {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 15px 0;
+	}
+	.f-1-5 {
+		float: left;
+	}
+	.f-1-2 {
+		text-align: right;
+	}
+	.user img {
+		vertical-align: middle;
+	}
+	.menu {
+		line-height: 2;
+	}
 }
