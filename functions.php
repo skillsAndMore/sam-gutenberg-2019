@@ -18,7 +18,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 // Informazioni Child Theme.
 define( 'CHILD_THEME_NAME', 'SkillsAndMore Gutenberg 2019' );
 define( 'CHILD_THEME_URL', 'https://skillsandmore.org' );
-define( 'CHILD_THEME_VERSION', '0.1.0' );
+define( 'CHILD_THEME_VERSION', '0.1.1' );
 
 // Aggiungo struttura HTML5.
 add_theme_support(
