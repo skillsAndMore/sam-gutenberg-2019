@@ -50,6 +50,7 @@
 
 		&:hover {
 			background-color: $green;
+			text-decoration: none;
 		}
 
 		.llms-lesson-title {
@@ -195,6 +196,9 @@
 @media only screen and (min-width: 800px) {
 	.llms-lesson-preview {
 		.llms-lesson-link {
+			.llms-extra {
+				float: right;
+			}
 			.llms-lesson-counter {
 				display: block;
 			}
