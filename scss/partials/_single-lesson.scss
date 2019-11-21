@@ -133,7 +133,8 @@
 }
 
 .llms-lesson-button-wrapper {
-	input[type="submit"] {
+	input[type="submit"],
+	button {
 		background-color: $orange;
 		&:hover {
 			background-color: $green;
