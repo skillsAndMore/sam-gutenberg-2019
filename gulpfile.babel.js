@@ -35,6 +35,7 @@ const gulp = require("gulp"); // Gulp of-course.
 
 // CSS related plugins.
 const sass = require("gulp-dart-sass"); // Gulp plugin for Sass compilation.
+const csso = require("gulp-csso");
 const minifycss = require("gulp-uglifycss"); // Minifies CSS files.
 const autoprefixer = require("gulp-autoprefixer"); // Autoprefixing magic.
 const mmq = require("gulp-merge-media-queries"); // Combine matching media queries into one.
@@ -134,7 +135,7 @@ gulp.task("styles", () => {
 		.pipe(mmq({ log: true })) // Merge Media Queries only for .min.css version.
 		.pipe(browserSync.stream()) // Reloads style.css if that is enqueued.
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(minifycss({ maxLineLen: 10 }))
+		.pipe(csso())
 		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
 		.pipe(gulp.dest(config.styleDestination))
 		.pipe(filter("**/*.css")) // Filtering stream to only css files.
@@ -184,7 +185,7 @@ gulp.task("stylesRTL", () => {
 		.pipe(browserSync.stream()) // Reloads style.css or style-rtl.css, if that is enqueued.
 		.pipe(mmq({ log: true })) // Merge Media Queries only for .min.css version.
 		.pipe(rename({ suffix: ".min" }))
-		.pipe(minifycss({ maxLineLen: 10 }))
+		.pipe(csso())
 		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
 		.pipe(gulp.dest(config.styleDestination))
 		.pipe(filter("**/*.css")) // Filtering stream to only css files.
