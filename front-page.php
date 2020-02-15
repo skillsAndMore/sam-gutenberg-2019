@@ -101,7 +101,8 @@ function sam_courses_list() {
 	$args = array(
 		'post_type' => 'course',
 		'posts_per_page' => 4,
-		'post_status' => 'publish'
+		'post_status' => 'publish',
+		'post__not_in' => [19338]
 	);
 
 	$courses_loop = new WP_Query( $args );
