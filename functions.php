@@ -18,7 +18,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 // Informazioni Child Theme.
 define( 'CHILD_THEME_NAME', 'SkillsAndMore Gutenberg 2019' );
 define( 'CHILD_THEME_URL', 'https://skillsandmore.org' );
-define( 'CHILD_THEME_VERSION', '0.1.1' );
+define( 'CHILD_THEME_VERSION', '0.1.2' );
 
 // Aggiungo struttura HTML5.
 add_theme_support(
@@ -369,7 +369,7 @@ function sam_display_post_course_archive() {
 
 //* 3 - Funzione per la tabella dei prezzi
 function sam_price_table() {
-	if ( !is_user_logged_in() ) :
+	if ( ! is_user_logged_in() ) :
 		if ( is_single() ) :
 	?>
 		</main></div></div>
