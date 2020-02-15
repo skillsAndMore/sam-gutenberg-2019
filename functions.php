@@ -477,11 +477,11 @@ function sam_jetpackcom_custom_required() {
 }
 
 
-// Rimuovo gli stili di Jetpack per il Contact Form.
-add_action( 'wp_print_styles', 'remove_grunion_style' );
-function remove_grunion_style() {
-	wp_deregister_style( 'grunion.css' );
-}
+// Rimuovo la dichiarazione oEmbed per la condivisione degli articoli.
+// Fix necessario e veloce per migliorare la condivisione del post su Linkedin.
+// source: https://wordpress.org/support/topic/linkedin-showing-wrong-image/
+remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
+remove_action('wp_head', 'wp_oembed_add_host_js');
 
 // Escludo specifiche lezioni da Sitemap di Yoast.
 add_filter( 'wpseo_exclude_from_sitemap_by_post_ids', function () {
